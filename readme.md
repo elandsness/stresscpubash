@@ -4,7 +4,9 @@ usage for the purpose of burning in hardware or testing the performance of therm
 utilized by the hardware.
 
 #Usage
-stresscpu.sh 9 30 #This will spawn 9 processes for 30 seconds.  If you are looking to peg the 
+stresscpu.sh <num_processes> <num_seconds>
+Both arguments are optional.
+For example: "stresscpu.sh 9 30" will spawn 9 processes for 30 seconds.  If you are looking to peg the 
 CPU to 100% of available resources, set the number of processes to spawn to the number of 
 threads your CPU can handle plus one.
 
